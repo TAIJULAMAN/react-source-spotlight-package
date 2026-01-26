@@ -1,4 +1,4 @@
-# 🎯 React Source Spotlight
+# React Source Spotlight
 
 > **Turn your portfolio into an interactive code showcase. Let recruiters explore your implementation without leaving the page.**
 
@@ -9,7 +9,7 @@ A production-ready NPM package designed specifically for **job seekers** and dev
 ![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)
 ![React](https://img.shields.io/badge/React-18+-61dafb)
 
-## ✨ Why Use This?
+##  Why Use This?
 
 **The Problem**: Recruiters want to see your code, but navigating GitHub repositories is time-consuming and breaks the portfolio experience.
 
@@ -108,7 +108,7 @@ The CLI will scan your components and generate `public/spotlight-map.json`.
 
 ---
 
-## 📸 How It Works
+##  How It Works
 
 ### Before (Regular Portfolio)
 ```
@@ -131,7 +131,7 @@ Hovers over component → Sees code instantly → Impressed! 🎉
 
 ---
 
-## 📖 Configuration
+##  Configuration
 
 Create a `spotlight.config.js` file in your project root:
 
@@ -147,7 +147,7 @@ module.exports = {
   exclude: ['**/*.test.*', '**/*.spec.*'],
   
   // Your GitHub repository URL
-  repoUrl: 'https://github.com/username/repo',
+  repoUrl: 'https://github.com/TAIJULAMAN/react-source-spotlight-package',
   
   // Feature flags
   features: {
@@ -158,7 +158,7 @@ module.exports = {
 };
 ```
 
-## 🎨 Component API
+## Component API
 
 ### `<SpotlightProvider>`
 
@@ -167,7 +167,7 @@ Wraps your entire application and provides context.
 ```tsx
 <SpotlightProvider
   mapUrl="/spotlight-map.json"  // URL to source map
-  repoUrl="https://github.com/username/repo"  // GitHub repo URL
+  repoUrl="https://github.com/TAIJULAMAN/react-source-spotlight-package"  // GitHub repo URL
   theme="dark"  // 'dark' | 'light'
 >
   {children}
@@ -219,21 +219,21 @@ function MyComponent() {
 }
 ```
 
-## 🎯 Perfect For
+## Perfect For
 
-### Job Seekers 💼
+### Job Seekers 
 Stand out from other candidates by letting recruiters see your code quality **instantly**. No more "check my GitHub" links that never get clicked.
 
-### Frontend Developers 👨‍💻
+### Frontend Developers 
 Build a portfolio that demonstrates not just what you built, but **how** you built it. Show off your clean code, component architecture, and best practices.
 
-### Freelancers 🚀
+### Freelancers 
 Win more clients by showcasing your implementation skills directly in your portfolio. Let potential clients see the quality of your work before they even contact you.
 
-### Open Source Contributors 🌟
+### Open Source Contributors 
 Make your personal projects more accessible. Let visitors explore your code without leaving your project showcase page.
 
-## 🛠️ Framework Integration
+## Framework Integration
 
 ### Next.js
 
@@ -268,7 +268,7 @@ Make your personal projects more accessible. Let visitors explore your code with
 }
 ```
 
-## 🔧 CLI Commands
+## CLI Commands
 
 ### Generate Source Map
 
@@ -281,7 +281,7 @@ Options:
 - `-o, --output <path>` - Output path for JSON map
 - `-i, --input <pattern>` - Input glob pattern for components
 
-## 📚 Examples
+## Examples
 
 Check out the `examples/` directory for complete working examples:
 
@@ -289,7 +289,7 @@ Check out the `examples/` directory for complete working examples:
 - **Vite React App** - Simple Vite setup
 - **Create React App** - Basic CRA integration
 
-## ⚠️ Important Notes
+## Important Notes
 
 ### Security
 
@@ -309,14 +309,14 @@ Check out the `examples/` directory for complete working examples:
 - Requires JavaScript enabled
 - Works on mobile devices
 
-## 🎬 See It In Action
+## See It In Action
 
 Once installed, your portfolio visitors can:
 
 1. **Click the floating "View Code" button** to enable Developer Mode
 2. **Hover over any wrapped component** to see a neon highlight
 3. **Click the component** to open a beautiful modal with:
-   - Full source code with syntax highlighting
+   - Full source code with syntax highlighting  
    - File metadata (lines, size)
    - Clean Code Badge (for well-structured components)
    - One-click copy button
@@ -324,14 +324,14 @@ Once installed, your portfolio visitors can:
 
 **Keyboard shortcut**: Press `Ctrl+Shift+D` to toggle Developer Mode on/off
 
-## 📊 What Gets Included in Your Bundle?
+## What Gets Included in Your Bundle?
 
 - **Package size**: ~50 KB gzipped (includes Prism syntax highlighter)
 - **Source map**: Varies based on how many components you showcase (typically 10-30 KB)
 - **Performance impact**: Zero when Developer Mode is off
 - **SEO impact**: None (source map loads asynchronously)
 
-## ⚠️ Important Security Notes
+## Important Security Notes
 
 ### What This Package Does
 - ✅ Only exposes source code for components you **explicitly wrap** with `<Spotlight>`
@@ -344,29 +344,23 @@ Once installed, your portfolio visitors can:
 - ✅ **Use the `exclude` option** in config to skip sensitive files
 - ✅ **Review the generated** `spotlight-map.json` before deploying
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/yourusername/react-source-spotlight/issues) if you want to contribute.
+Feel free to check the [issues page](https://github.com/TAIJULAMAN/react-source-spotlight-package/issues) if you want to contribute.
 
-## 📄 License
+## License
 
 MIT © 2026 React Source Spotlight
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with [Prism React Renderer](https://github.com/FormidableLabs/prism-react-renderer) for beautiful syntax highlighting
 - Inspired by the need to make portfolio code more accessible to recruiters
 - Designed specifically for the job-seeking developer community
-
-## 💬 Support
-
-- 📧 **Email**: [your-email@example.com]
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/react-source-spotlight/issues)
-- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/yourusername/react-source-spotlight/discussions)
 
 ---
 
@@ -374,8 +368,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ for job seekers and developers**
 
-If this package helped you land a job or impress a client, [give it a star ⭐](https://github.com/yourusername/react-source-spotlight)
+If this package helped you land a job or impress a client, [give it a star ⭐](https://github.com/TAIJULAMAN/react-source-spotlight-package)
 
-[Report Bug](https://github.com/yourusername/react-source-spotlight/issues) · [Request Feature](https://github.com/yourusername/react-source-spotlight/issues) · [Documentation](https://github.com/yourusername/react-source-spotlight#readme)
+[Report Bug](https://github.com/TAIJULAMAN/react-source-spotlight-package/issues) · [Request Feature](https://github.com/TAIJULAMAN/react-source-spotlight-package/issues) · [Documentation](https://github.com/TAIJULAMAN/react-source-spotlight-package#readme)
 
 </div>
