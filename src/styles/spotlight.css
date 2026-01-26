@@ -1,0 +1,320 @@
+/* React Source Spotlight Styles */
+
+/* ===== Toggle Button ===== */
+.spotlight-toggle {
+  position: fixed;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 9999;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.spotlight-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(102, 126, 234, 0.6);
+}
+
+.spotlight-toggle:active {
+  transform: translateY(0);
+}
+
+.spotlight-toggle-bottom-right {
+  bottom: 24px;
+  right: 24px;
+}
+
+.spotlight-toggle-bottom-left {
+  bottom: 24px;
+  left: 24px;
+}
+
+.spotlight-toggle-top-right {
+  top: 24px;
+  right: 24px;
+}
+
+.spotlight-toggle-top-left {
+  top: 24px;
+  left: 24px;
+}
+
+/* ===== Hover Badge ===== */
+.spotlight-badge {
+  position: absolute;
+  top: -36px;
+  right: 0;
+  background: rgba(0, 255, 136, 0.95);
+  backdrop-filter: blur(8px);
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+  white-space: nowrap;
+  pointer-events: none;
+  animation: slideDown 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 255, 136, 0.3);
+  z-index: 10001;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Modal Backdrop ===== */
+.spotlight-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  animation: fadeIn 0.2s ease;
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ===== Modal ===== */
+.spotlight-modal {
+  background: #1e1e1e;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  animation: slideUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ===== Modal Header ===== */
+.spotlight-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #333;
+  background: #252525;
+}
+
+.spotlight-modal-title h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+}
+
+.spotlight-modal-meta {
+  margin: 4px 0 0 0;
+  font-size: 12px;
+  color: #888;
+}
+
+.spotlight-modal-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.spotlight-modal-close {
+  background: transparent;
+  border: none;
+  color: #888;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: color 0.2s;
+  line-height: 1;
+}
+
+.spotlight-modal-close:hover {
+  color: #fff;
+}
+
+/* ===== Clean Code Badge ===== */
+.clean-code-badge {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* ===== Action Buttons ===== */
+.spotlight-actions {
+  display: flex;
+  gap: 12px;
+  padding: 16px 24px;
+  background: #252525;
+  border-bottom: 1px solid #333;
+}
+
+.spotlight-action-btn {
+  padding: 8px 16px;
+  background: #333;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.spotlight-action-btn:hover {
+  background: #444;
+  border-color: #555;
+  transform: translateY(-1px);
+}
+
+.spotlight-action-btn:active {
+  transform: translateY(0);
+}
+
+.spotlight-action-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.spotlight-action-link {
+  color: #fff;
+}
+
+/* ===== Code Container ===== */
+.spotlight-code-container {
+  overflow: auto;
+  flex: 1;
+  background: #1e1e1e;
+}
+
+.spotlight-code-pre {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+.spotlight-code-pre > div {
+  display: flex;
+}
+
+.line-number {
+  display: inline-block;
+  min-width: 40px;
+  padding-right: 16px;
+  color: #666;
+  text-align: right;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.line-content {
+  flex: 1;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .spotlight-modal {
+    max-width: 100%;
+    max-height: 100vh;
+    border-radius: 0;
+  }
+
+  .spotlight-modal-backdrop {
+    padding: 0;
+  }
+
+  .spotlight-toggle {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .spotlight-toggle-bottom-right,
+  .spotlight-toggle-bottom-left {
+    bottom: 16px;
+  }
+
+  .spotlight-toggle-bottom-right {
+    right: 16px;
+  }
+
+  .spotlight-toggle-bottom-left {
+    left: 16px;
+  }
+
+  .spotlight-code-pre {
+    font-size: 12px;
+  }
+
+  .spotlight-actions {
+    flex-wrap: wrap;
+  }
+}
+
+/* ===== Scrollbar Styling ===== */
+.spotlight-code-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.spotlight-code-container::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.spotlight-code-container::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.spotlight-code-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
